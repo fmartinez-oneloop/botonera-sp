@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Botonera</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+        function playAudio(id) {
+            var audio = document.getElementById(id);
+
+            if (audio) {
+                audio.play();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Botonera Sumaprop</h1>
+        <div class="container">
+            <div class="boton">
+                <button class="push--flat" onclick="playAudio('batman')"></button>
+                <p>Batman</p>
+                <audio id="batman">
+                    <source src="batman_transition.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="boton">
+                <button class="push--flat" onclick="playAudio('miami')"></button>
+                <p>Miameee</p>
+                <audio id="miami">
+                    <source src="miameee.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="boton">
+                <button class="push--flat" onclick="playAudio('no_camines_sola')"></button>
+                <p>No camines sola</p>
+                <audio id="no_camines_sola">
+                    <source src="no_camines_sola.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="boton">
+                <button class="push--flat" onclick="playAudio('mmm')"></button>
+                <p>Mmm</p>
+                <audio id="mmm">
+                    <source src="mmm.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
